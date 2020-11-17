@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
+
 Created on Sun Nov 15 18:32:27 2020
 
 @author: Gurkan

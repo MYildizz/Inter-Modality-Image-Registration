@@ -190,22 +190,20 @@ class Ui_MainWindow(object):
         
         size=int(math.sqrt(len(y_pred)))
 
-        y_pred=y_pred.reshape(size,size)    
+        y_pred=y_pred.reshape(size,size)       
         
-        plt.figure(figsize=(8,8))
-        plt.imshow(y_pred,cmap="gray")
-        plt.show()
-
-        image = y_pred
-        image = QtGui.QImage(image, image.shape[1],\
-                            image.shape[0], image.shape[1] ,QtGui.QImage.Format_Grayscale8)
-        pix = QtGui.QPixmap(image)
-
         self.progressBar.setVisible(True)
-        self.lbl_result.setPixmap(pix)
-        #self.lbl_result.setPixmap(QtGui.QPixmap("hiko_baba.jpg"))
         for i in range(1,101):
-            self.progressBar.setValue(self.progressBar.value() + 1)        
+            self.progressBar.setValue(self.progressBar.value() + 1)  
+            
+            
+        y_pred=y_pred.astype("uint8")   
+        image = y_pred
+        image_ = QtGui.QImage(image, image.shape[1],image.shape[0], image.shape[1] ,QtGui.QImage.Format_Grayscale8)
+        pix = QtGui.QPixmap(image_)
+        
+        #self.lbl_result.resize(pix.width(), pix.height())
+        self.lbl_result.setPixmap(pix)    
         self.lbl_result_title.setVisible(True)
         self.lbl_result.setVisible(True)
 

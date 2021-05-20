@@ -678,6 +678,20 @@ class Ui_MainWindow(object):
         inverse_LowPass = np.fft.ifft2(LowPass)   
     
         return np.abs(inverse_LowPass)
+    
+    def calculateDistance(self,point1,point2):
+        return math.sqrt((point1[0]-point2[0])**2 + (point1[1]-point2[1])**2)
+
+    def calculateIdealLowPassFilter(self,D0,imgShape):
+        lowPassScpectrum = np.zeros(imgShape[:2])
+        rows, cols = imgShape[:2]
+        center = (rows/2,cols/2)
+        for x in range(cols):
+            for y in range(rows):
+                if self.calculateDistance((y,x),center) < D0:
+                    lowPassScpectrum[y,x] = 1
+        return lowPassScpectrum    
+ 
 
 
 

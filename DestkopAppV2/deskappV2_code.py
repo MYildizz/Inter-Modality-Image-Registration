@@ -543,6 +543,7 @@ class Ui_MainWindow(object):
         self.lbl_result.setGeometry(QtCore.QRect(100, 40, 721, 581))
         self.lbl_result.setText("")
         self.lbl_result.setObjectName("lbl_result")
+        self.lbl_result.setScaledContents(True)
         self.stackedWidget.addWidget(self.page_result)
         self.page_about = QtWidgets.QWidget()
         self.page_about.setObjectName("page_about")

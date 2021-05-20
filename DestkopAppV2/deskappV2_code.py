@@ -660,7 +660,7 @@ class Ui_MainWindow(object):
         self.lbl_mr_title.setText(_translate("MainWindow", "MR IMAGE"))
         self.lbl_result_title.setText(_translate("MainWindow", "RESULT IMAGE"))
         self.lbl_about.setText(_translate("MainWindow", "This application is a product of Ankara Yıldırım Beyazıt University\n2020-2021 Academic Year Computer Engineering graduation project."))
-        self.lbl_authors.setText(_translate("MainWindow", "+Gurkan ALTINTAŞ (Developer)\n\n+Oğuzhan TOKLU (Developer)\n\n+Berkan YILDIRIM (Yatıyo Amk K*rdu)\n\n+Muratcan YILDIZ (Project Manager)\n\n+Baha ŞEN (Project Supervisor)"))
+        self.lbl_authors.setText(_translate("MainWindow", "+Gurkan ALTINTAŞ (Developer)\n\n+Oğuzhan TOKLU (Developer)\n\n+Berkan YILDIRIM (Developer)\n\n+Muratcan YILDIZ (Project Manager)\n\n+Baha ŞEN (Project Supervisor)"))
         self.lab_tab.setText(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>"))
         self.frame_drag.setToolTip(_translate("MainWindow", "Drag"))
 

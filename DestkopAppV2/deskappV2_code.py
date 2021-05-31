@@ -11,6 +11,13 @@ from keras.models import load_model
 from skimage import filters
 from skimage import feature
 
+import skimage
+import skimage.io as io
+
+from skimage.color import rgb2gray
+from skimage.segmentation import felzenszwalb, quickshift
+from skimage.segmentation import mark_boundaries
+from skimage.util import img_as_float
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -90,13 +97,36 @@ class Ui_MainWindow(object):
         feature2_ct=feature.canny(test_x).reshape(-1,1)
         
         #Feature3 Low Pass Filter
-        feature3_mr=self.low_pass(test_x2).reshape(-1,1)
-        feature3_ct=self.low_pass(test_x).reshape(-1,1)
-
-        test_x = test_x.reshape(-1,1)
-        test_x2 = test_x2.reshape(-1,1)
+        test_low_mr=self.low_pass(test_x2).reshape(-1,1)
+        test_low_ct=self.low_pass(test_x).reshape(-1,1)
         
-        test=np.concatenate((test_x, test_x2,feature1_mr,feature1_ct,feature2_mr,feature2_ct,feature3_mr,feature3_ct), axis=1)
+
+        #Feature SuperPixel
+        
+        s1_mr,s2_mr,s3_mr=self.super_pixel(test_x2)
+        s1_ct,s2_ct,s3_ct=self.super_pixel(test_x)
+        
+        s1_mr=s1_mr.reshape(-1,1)
+        s2_mr=s2_mr.reshape(-1,1)
+        s3_mr=s3_mr.reshape(-1,1)
+        
+        s1_ct=s1_ct.reshape(-1,1)
+        s2_ct=s2_ct.reshape(-1,1)
+        s3_ct=s3_ct.reshape(-1,1)
+        
+        test_x = test_x.reshape(-1,1)
+        test_x2 = test_x2.reshape(-1,1) 
+        
+        
+        
+        #(ct_images, mr_images,edge_sobel_mr,edge_sobel_ct)
+        test=np.concatenate((test_x2,test_x,
+                             feature1_mr,feature1_ct,
+                             feature2_mr,feature2_ct,
+                             test_low_mr,test_low_ct,
+                             s1_mr,s1_ct,
+                             s2_mr,s2_ct,
+                             s3_mr,s3_ct), axis=1)
         
         y_pred=best.predict(test)
 
@@ -692,6 +722,16 @@ class Ui_MainWindow(object):
                 if self.calculateDistance((y,x),center) < D0:
                     lowPassScpectrum[y,x] = 1
         return lowPassScpectrum    
+    
+    def super_pixel(self,input):
+
+        img = input
+        segments_fz = felzenszwalb(img, scale=100, sigma=0.5, min_size=50)  
+        a=mark_boundaries(img, segments_fz)    
+        c1=a[:,:,2]
+        c2=a[:,:,1]
+        c3=a[:,:,0]
+        return c1,c2,c3
  
 
 

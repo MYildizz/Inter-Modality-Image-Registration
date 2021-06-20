@@ -46,12 +46,10 @@ There are four basic steps incluiding Interpolation, Metric, Optimization, Trans
 
 ![image](https://user-images.githubusercontent.com/38917811/122679890-59e05980-d1f5-11eb-951c-3009927d5efe.png)
 
-
- <br/>
 ## Interpolation
  
-+   When a point is mapped from one space to another with a transformation, it is generally mapped to a non-grid location. Therefore, interpolation is necessary to evaluate the image density at the mapped location.
-+  Transformation maps point from the still image coordinate system to the moving image coordinate system. <br/>
+ +   When a point is mapped from one space to another with a transformation, it is generally mapped to a non-grid location. Therefore, interpolation is necessary to evaluate the   image density at the mapped location.
+ +  Transformation maps point from the still image coordinate system to the moving image coordinate system. <br/>
 
 ![image](https://user-images.githubusercontent.com/38917811/122679768-cad34180-d1f4-11eb-8931-3de5378e9754.png)
 
@@ -68,6 +66,19 @@ There are four basic steps incluiding Interpolation, Metric, Optimization, Trans
 
 Windowed Sinc Interpolation used in the project
 
+## Metric
+
+ +  This is the most critical part of the registration process.
+
+ + The choice of the metric algorithm is directly determined by the problem to be solved.
+
+ +  We used the histogram-based mutual information method because it is highly recommended in medical registrations.
+
+![image](https://user-images.githubusercontent.com/38917811/122679926-92803300-d1f5-11eb-9e18-88fc550b1e92.png)
+
+Mutual Information Metric Graph
+
+![image](https://user-images.githubusercontent.com/38917811/122679936-a0ce4f00-d1f5-11eb-8571-43e35c8ccd35.png)
 
   
  

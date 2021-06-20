@@ -14,6 +14,7 @@
   +    Gives the closest results geometrically.
   +    Helpful in applications such as drug dosage for disease treatment.
 
+![image](https://user-images.githubusercontent.com/38917811/122679484-be021e00-d1f3-11eb-9f66-ea47d9f5c30e.png)
 
 
 ###  MAGNETIC RESONANCE ( MRI )
@@ -22,6 +23,9 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
 
  +   High-resolution images of the inside of the body are obtained to diagnose      various problems. 
  +   Most widely used method for disease diagnosis. 
+
+![image](https://user-images.githubusercontent.com/38917811/122679491-c3f7ff00-d1f3-11eb-8bfb-2f6af20d1453.png)
+
 
 ###  DIFFERENCE BETWEEN MRI AND CT
 

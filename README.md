@@ -33,8 +33,16 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
 ![image](https://user-images.githubusercontent.com/38917811/122679568-12a59900-d1f4-11eb-88f2-1f251e51f8de.png) 
 + High geometric accuracy.
 + Low image resolution. <br/>
-*MR* <br/>
+**MR** <br/>
 ![image](https://user-images.githubusercontent.com/38917811/122679576-1d602e00-d1f4-11eb-8b7f-1d4a5d0e9e4d.png)
+
+###  PROJECT DEVELOPMENT ENVIRONMENT!
+
+  Examining the development environment, Anaconda3, Spyder IDE used for the project because Spyder provides more convenience for the data processing, such as data visualization, ITK, Variable Tracking. Keras, Tensorflow libraries and  deep learning modules will be used for the image registration. PyQt library used for the desktop application.
+
+### BASIC IMAGE REGISTRATION!
+
+
 
 
 

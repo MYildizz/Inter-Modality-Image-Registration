@@ -106,9 +106,9 @@ Mutual Information Metric Graph
 ## Alpha Blending
 
 It combines the pixels in the two images and allows the images we have joined to be seen overlapping.
-![image](https://user-images.githubusercontent.com/38917811/122680070-3cf85600-d1f6-11eb-9f8b-ac802572e12c.png)
 
-PURPLE : Purple Areas are images obtained as a result of tomography.
+
+PURPLE : Purple Areas are images obtained as a result of tomography. <br/>
 GREEN  : Green Areas are images obtained as a result of MRI.
 
 ![image](https://user-images.githubusercontent.com/38917811/122680081-51d4e980-d1f6-11eb-9b5d-0c369f58ef72.png)
@@ -118,6 +118,75 @@ GREEN  : Green Areas are images obtained as a result of MRI.
 ![image](https://user-images.githubusercontent.com/38917811/122680100-5bf6e800-d1f6-11eb-8b37-dc5fd0da9a9f.png)
 
 ![image](https://user-images.githubusercontent.com/38917811/122680106-60bb9c00-d1f6-11eb-8ab4-a6fc9610d2e7.png)
+
+# DEEP LEARNING METHODS!
+
+## Registration Without Any Feature Extraction ( Classic Deep Learning )
+
+ + 15 patient data with jpeg format was read.
+ + Output layer activation function is sigmoid applied.
+ + Occuracy %30
+
+![image](https://user-images.githubusercontent.com/38917811/122680179-ac6e4580-d1f6-11eb-8b27-35a32bb7af23.png)
+
+## Canny Edge Feature Extraction
+
+ + Sk-Image library used for feature extraction.
+ + Suitable for framing the Picture.
+
+![image](https://user-images.githubusercontent.com/38917811/122680221-d9baf380-d1f6-11eb-840e-455310653346.png)
+
+## Sobel Edge Detection Feature Extraction
+ + Sk-Image library used for feature extraction.
+ + More advanced version of the high-pass filter.
+
+![image](https://user-images.githubusercontent.com/38917811/122680279-0707a180-d1f7-11eb-872f-b6311c28480a.png)
+
+## AUTOENCODERS
+
+ + The purpose of the autoencoder is to learn a symbolic vector that represents the data.
+
+![image](https://user-images.githubusercontent.com/38917811/122680291-138bfa00-d1f7-11eb-87b2-e5738876b83e.png)
+
+## ARRANGEMENT THE NEURAL NETWORK’S HIDDEN LAYERS
+ + Output activation function changed as ReLU.
+ + More hidden layer added.
+ + Accuracy %94
+
+![image](https://user-images.githubusercontent.com/38917811/122680328-42a26b80-d1f7-11eb-9fcf-638632459cd5.png)
+
+## HIGH PASS & LOW PASS FEATURE EXTRACTION METHOD!
+
+High-Pass : It was not used because of Sobel Edge Detection.
+Low-Pass  : It was used to help improve accuracy in MR and CT images. The result of the study was yield.
+
+## Superpixel Segmentation Benchmark Work
+
+![image](https://user-images.githubusercontent.com/38917811/122680371-7382a080-d1f7-11eb-8e07-c26b6f5713a2.png)  
+
+![image](https://user-images.githubusercontent.com/38917811/122680378-77aebe00-d1f7-11eb-9546-6b074a12c105.png)
+
+![image](https://user-images.githubusercontent.com/38917811/122680382-7bdadb80-d1f7-11eb-818f-44615aa6fa1e.png)
+
+![image](https://user-images.githubusercontent.com/38917811/122680386-7ed5cc00-d1f7-11eb-8bb4-3eab0e34edce.png)
+
+# Result
+ + Mean absolute error decrease to 2.72.
+ + Accuracy increased by 3.7 after superpixel and low-pass filter feature extractions.
+ + Accuracy %97.7
+ 
+ ![image](https://user-images.githubusercontent.com/38917811/122680408-a2991200-d1f7-11eb-8d4d-e6b03f53b19a.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

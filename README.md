@@ -28,12 +28,12 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
 
 
 ###  DIFFERENCE BETWEEN MRI AND CT
-
- *CT*
-![image](https://user-images.githubusercontent.com/38917811/122679568-12a59900-d1f4-11eb-88f2-1f251e51f8de.png)
+ 
+ **CT** <br/>
+![image](https://user-images.githubusercontent.com/38917811/122679568-12a59900-d1f4-11eb-88f2-1f251e51f8de.png) 
 + High geometric accuracy.
 + Low image resolution.
-*MR*
+*MR* <br/>
 ![image](https://user-images.githubusercontent.com/38917811/122679576-1d602e00-d1f4-11eb-8b7f-1d4a5d0e9e4d.png)
 
 

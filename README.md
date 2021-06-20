@@ -23,6 +23,11 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
  +   High-resolution images of the inside of the body are obtained to diagnose      various problems. 
  +   Most widely used method for disease diagnosis. 
 
+###  DIFFERENCE BETWEEN MRI AND CT
+
+
+![image](https://user-images.githubusercontent.com/38917811/122679469-afb40200-d1f3-11eb-9975-25ecee1e50c5.png)
+
 
 
 

@@ -53,7 +53,7 @@ There are four basic steps incluiding Interpolation, Metric, Optimization, Trans
 
 ![image](https://user-images.githubusercontent.com/38917811/122679768-cad34180-d1f4-11eb-8931-3de5378e9754.png)
 
-# Interpolation Types
+### Interpolation Types
 
   Linear Interpolation :   A method that assumes the density
   varies linearly between grid positions.
@@ -80,7 +80,29 @@ Mutual Information Metric Graph
 
 ![image](https://user-images.githubusercontent.com/38917811/122679936-a0ce4f00-d1f5-11eb-8571-43e35c8ccd35.png)
 
-  
+## Optimization
+
+ + The basic input to an optimizer is a cost function or metric object.
+ 
+ + The metric is set using optimization algorithm. 
+
+ + Once the optimization has finished, the final parameters can be obtained. 
+ + Gradient Descent method was used in the Project.
+
+## Transformation
+
+ + This stage is where the conversion is done between the two images.
+
+ + We performed your process using the Euler 3D method, which is more recommended for geometric transformation in the literature.
+
+![image](https://user-images.githubusercontent.com/38917811/122680000-e3902700-d1f5-11eb-9a6b-6e3f54e97d32.png)
+
+## Registration Result
+
+  We have a poor result in terms of geometrically smooth image quality in our tomography image. In MR, we have a very good geometric output in terms of image quality and a poor output in terms of size. So how are things in our fusion image? Let's focus especially on the bone area. Geometrically it is the same as in the tomography view, and in terms of image quality it is the same as in the MRI image. So an image that meets our expectations.
+
+![image](https://user-images.githubusercontent.com/38917811/122680009-f276d980-d1f5-11eb-83b8-7a33809c515d.png)
+
  
  
   

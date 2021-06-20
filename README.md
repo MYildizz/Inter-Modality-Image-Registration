@@ -33,7 +33,7 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
 ![image](https://user-images.githubusercontent.com/38917811/122679568-12a59900-d1f4-11eb-88f2-1f251e51f8de.png) 
 + High geometric accuracy.
 + Low image resolution. <br/>
-**MR** <br/>
+ **MR** <br/>
 ![image](https://user-images.githubusercontent.com/38917811/122679576-1d602e00-d1f4-11eb-8b7f-1d4a5d0e9e4d.png)
 
 ###  PROJECT DEVELOPMENT ENVIRONMENT
@@ -42,12 +42,69 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
 
 ### BASIC IMAGE REGISTRATION
  <br/>
- ## Interpolation
+## Interpolation
  
 +   When a point is mapped from one space to another with a transformation, it is generally mapped to a non-grid location. Therefore, interpolation is necessary to evaluate the image density at the mapped location.
 +  Transformation maps point from the still image coordinate system to the moving image coordinate system. <br/>
 
 ![image](https://user-images.githubusercontent.com/38917811/122679768-cad34180-d1f4-11eb-8931-3de5378e9754.png)
+
+# Interpolation Types
+
+
+ 
+ 
+  
+  Linear
+
+
+  Interpolation
+
+
+  
+  
+  B-Spline Interpolation
+
+
+  
+  
+  Windowed Sinc Interpolation
+
+
+  
+ 
+ 
+  
+  A method that assumes the density
+  varies linearly between grid positions.
+
+
+  
+  
+  A method for comparing image
+  density using the B-spline function.
+
+
+  
+  
+  A method that performs
+  interpolation based on Fourier analysis.
+
+
+  
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+
 
 
 

@@ -103,6 +103,24 @@ Mutual Information Metric Graph
 
 ![image](https://user-images.githubusercontent.com/38917811/122680009-f276d980-d1f5-11eb-83b8-7a33809c515d.png)
 
+## Alpha Blending
+
+It combines the pixels in the two images and allows the images we have joined to be seen overlapping.
+![image](https://user-images.githubusercontent.com/38917811/122680070-3cf85600-d1f6-11eb-9f8b-ac802572e12c.png)
+
+PURPLE : Purple Areas are images obtained as a result of tomography.
+GREEN  : Green Areas are images obtained as a result of MRI.
+
+![image](https://user-images.githubusercontent.com/38917811/122680081-51d4e980-d1f6-11eb-9b5d-0c369f58ef72.png)
+
+## Landmark Validation
+
+![image](https://user-images.githubusercontent.com/38917811/122680100-5bf6e800-d1f6-11eb-8b37-dc5fd0da9a9f.png)
+
+![image](https://user-images.githubusercontent.com/38917811/122680106-60bb9c00-d1f6-11eb-8ab4-a6fc9610d2e7.png)
+
+
+
  
  
   

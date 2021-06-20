@@ -41,6 +41,12 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
   Examining the development environment, Anaconda3, Spyder IDE used for the project because Spyder provides more convenience for the data processing, such as data visualization, ITK, Variable Tracking. Keras, Tensorflow libraries and  deep learning modules will be used for the image registration. PyQt library used for the desktop application.
 
 ### BASIC IMAGE REGISTRATION
+
+There are four basic steps incluiding Interpolation, Metric, Optimization, Transformation in the project. <br/>
+
+![image](https://user-images.githubusercontent.com/38917811/122679890-59e05980-d1f5-11eb-951c-3009927d5efe.png)
+
+
  <br/>
 ## Interpolation
  
@@ -60,7 +66,7 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
   Windowed Sinc Interpolation :   A method that performs
   interpolation based on Fourier analysis.
 
-
+Windowed Sinc Interpolation used in the project
 
 
   

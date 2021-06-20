@@ -1,5 +1,5 @@
 
-### Deep Learning based Inter-Modality Image Registration Supervised by Intra-Modality Similarity
+# Deep Learning based Inter-Modality Image Registration Supervised by Intra-Modality Similarity
 
  The aim of the project is to reveal the geometric accuracy of tomography images and the soft tissue resolution quality of  MRI images with deep learning-based image registration method.
 
@@ -7,7 +7,7 @@
 
   Radiology is the use of x-rays and other imaging methods in medicine for diagnosis and treatment.
 
-# COMPUTED TOMOGRAPHY ( CT )
+### COMPUTED TOMOGRAPHY ( CT )
 
   By taking many two-dimensional X-ray images of an object from different angles, it is tried to obtain a three-dimensional image of the internal structure of that object.
   +    Creates a detailed and layered picture by scanning the   relevant area or areas of the body with X-r
@@ -16,7 +16,7 @@
 
 
 
-#  MAGNETIC RESONANCE ( MRI )
+###  MAGNETIC RESONANCE ( MRI )
 
 Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and radio waves to create detailed images of organs and tissues in the body 
 

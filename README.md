@@ -36,11 +36,21 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
 **MR** <br/>
 ![image](https://user-images.githubusercontent.com/38917811/122679576-1d602e00-d1f4-11eb-8b7f-1d4a5d0e9e4d.png)
 
-###  PROJECT DEVELOPMENT ENVIRONMENT!
+###  PROJECT DEVELOPMENT ENVIRONMENT
 
   Examining the development environment, Anaconda3, Spyder IDE used for the project because Spyder provides more convenience for the data processing, such as data visualization, ITK, Variable Tracking. Keras, Tensorflow libraries and  deep learning modules will be used for the image registration. PyQt library used for the desktop application.
 
-### BASIC IMAGE REGISTRATION!
+### BASIC IMAGE REGISTRATION
+ <br/>
+ ## Interpolation
+ 
++   When a point is mapped from one space to another with a transformation, it is generally mapped to a non-grid location. Therefore, interpolation is necessary to evaluate the image density at the mapped location.
++  Transformation maps point from the still image coordinate system to the moving image coordinate system. <br/>
+
+![image](https://user-images.githubusercontent.com/38917811/122679768-cad34180-d1f4-11eb-8931-3de5378e9754.png)
+
+
+
 
 
 

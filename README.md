@@ -51,44 +51,16 @@ Magnetic Resonance Imaging (MRI) is a technique that uses magnetic fields and ra
 
 # Interpolation Types
 
-
- 
- 
-  
-  Linear
-
-
-  Interpolation
-
-
-  
-  
-  B-Spline Interpolation
-
-
-  
-  
-  Windowed Sinc Interpolation
-
-
-  
- 
- 
-  
-  A method that assumes the density
+  Linear Interpolation :   A method that assumes the density
   varies linearly between grid positions.
 
-
-  
-  
-  A method for comparing image
+  B-Spline Interpolation :   A method for comparing image
   density using the B-spline function.
 
-
-  
-  
-  A method that performs
+  Windowed Sinc Interpolation :   A method that performs
   interpolation based on Fourier analysis.
+
+
 
 
   
